@@ -1,0 +1,19 @@
+#%RAML 1.0
+title: firstapp
+/search:
+  get:
+    queryParameters:
+      keyword:
+        type: string
+        minLength: 3
+        maxLength: 10
+    responses:
+          200:
+                body:
+                      application/json:
+                            example:
+                                  {"message ":"This is my first app."}    
+
+
+     
+     
